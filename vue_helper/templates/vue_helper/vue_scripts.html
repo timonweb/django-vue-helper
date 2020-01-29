@@ -1,0 +1,8 @@
+{% if VUE_DEV_MODE %}
+  <script src="{{ VUE_DEV_SERVER_URL }}/js/chunk-vendors.js" defer></script>
+  <script src="{{ VUE_DEV_SERVER_URL }}/js/app.js" defer></script>
+{% else %}
+  {% for script in VUE_DIST_JS %}
+    <script src="{{ script }}" defer></script>
+  {% endfor %}
+{% endif %}

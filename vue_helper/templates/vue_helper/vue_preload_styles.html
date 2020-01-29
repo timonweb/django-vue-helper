@@ -1,0 +1,5 @@
+{% if VUE_DEV_MODE is False %}
+  {% for style in VUE_DIST_CSS %}
+    <link href="{{ style }}" rel="preload" as="style">
+  {% endfor %}
+{% endif %}

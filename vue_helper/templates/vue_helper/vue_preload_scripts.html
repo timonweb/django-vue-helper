@@ -1,0 +1,5 @@
+{% if VUE_DEV_MODE is False %}
+  {% for script in VUE_DIST_JS %}
+    <link href="{{ script }}" rel="preload" as="script">
+  {% endfor %}
+{% endif %}
