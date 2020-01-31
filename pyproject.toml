@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "django-vue-helper"
+version = "0.1.0"
+description = ""
+authors = ["Tim Kamanin <tim@timonweb.com>"]
+license = "MIT"
+packages = [
+    { include = "vue_helper" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+django = ">=2.2,<=3.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.5"
+pytest-django = "^3.8.0"
+tox = "^3.14.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
