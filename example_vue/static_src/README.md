@@ -1,4 +1,4 @@
-# vueapp
+# static_src
 
 ## Project setup
 ```

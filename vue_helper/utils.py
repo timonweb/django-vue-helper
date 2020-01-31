@@ -21,7 +21,7 @@ def get_production_assets(vue_dist_path):
         raise VueDistIndexFileNotFound(err)
 
 
-def get_js_and_css_links_from_html(html: string) -> tuple:
+def get_js_and_css_links_from_html(html: str) -> tuple:
     """
     Parse HTML document and return a tuple of javascript and css links.
     """
