@@ -22,10 +22,10 @@ def get_js_and_css_links_from_html(html: str) -> tuple:
     """
     Parse HTML document and return a tuple of javascript and css links.
     """
-    js = set([alias_path(match.group(1)) for match in
-              re.finditer('<script(?:.*)src=[\"]?(\S+.js)', html, re.MULTILINE | re.IGNORECASE)])
-    css = set([alias_path(match.group(1)) for match in
-               re.finditer('<link(?:.*)href=[\"]?(\S+.css)', html, re.MULTILINE | re.IGNORECASE)])
+    js = set([alias_path(match) for match in
+              re.findall(r'<script src=[\"]?(\S+.js)', html, re.IGNORECASE)])
+    css = set([alias_path(match) for match in
+               re.findall(r'<link href=[\"]?(\S+.css)', html, re.IGNORECASE)])
     return js, css
 
 

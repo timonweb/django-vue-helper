@@ -8,15 +8,15 @@ def test_get_js_and_css_links_from_html():
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <script src="/js/app.8170fja.js"></script>
-  <script src="/js/vendors.8170fja.js"></script>
-  <link rel="stylesheet" href="/css/app.8170fja.css">
-  <link rel="stylesheet" href="/css/vendors.8170fja.css">
+  <script src="/js/app.8170fja.js" defer></script>
+  <script src="/js/vendors.8170fja.js" defer></script>
+  <link href="/css/app.8170fja.css" rel="stylesheet">
+  <link href="/css/vendors.8170fja.css" rel="stylesheet">
 </head>
 <body>
 <div id="app"></div>
 </body>
-</html>    
+</html>
 """
     js, css = get_js_and_css_links_from_html(html)
 
