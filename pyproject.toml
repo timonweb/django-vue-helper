@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-vue-helper"
-version = "0.1.2"
+version = "0.1.4"
 description = ""
 authors = ["Tim Kamanin <tim@timonweb.com>"]
 license = "MIT"
@@ -10,7 +10,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.7"
-django = ">=2.2,<=3.1"
+django = ">=2.2,<=3.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.3.5"
